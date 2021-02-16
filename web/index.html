@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create App Gui</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <section id="firstSection">
+        <h1>Выберите шаблон:</h1>
+
+        <ul id="templateList">
+            <li data-pack-name="electron-app">
+                <span class="title">Eletron App</span>
+            </li>
+        </ul>
+
+        <div class="circle">
+            <button class="btn">+</button>
+        </div>
+    </section>
+
+    <section id="secondSection" hidden>
+        <h1>Выберите расположение проекта:</h1>
+
+        <div class="form">
+            <input type="text" id="selectedLocationInp" readonly>
+            <button id="selectLocationBtn">Выбрать</button>
+        </div>
+
+        <div class="circle">
+            <button class="btn" id="createProjectBtn">></button>
+        </div>
+    </section>
+</body>
+
+</html>
